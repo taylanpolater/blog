@@ -3,29 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kişisel Blog</title>
+  <title>Ana Sayfa | Taylan'ın Blogu</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Kişisel Blogum</h1>
-    <nav>
-      <a href="index.html">Anasayfa</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">Hakkımda</a>
-      <a href="contact.html">İletişim</a>
-    </nav>
+    <div class="container">
+      <h1>Taylan'ın Blogu</h1>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="blog.html">Yazılar</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
+  <main class="container">
+    <section class="hero">
       <h2>Merhaba!</h2>
-      <p>Bu benim kişisel blog sitem. Burada deneyimlerimi, fikirlerimi ve projelerimi paylaşıyorum.</p>
+      <p>Mekatronik mühendisliği ve hayat üzerine notlarım burada.</p>
+    </section>
+
+    <section class="recent-posts">
+      <h3>Son Yazılar</h3>
+      <div class="post-card">
+        <h4><a href="yazi1.html">İlk Blog Yazım</a></h4>
+        <p>Bu yazıda neden blog açtığımdan bahsediyorum...</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 - Kişisel Blog</p>
+    <div class="container">
+      <p>&copy; 2025 Taylan Polater</p>
+    </div>
   </footer>
 </body>
 </html>
