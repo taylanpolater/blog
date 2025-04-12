@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arduino ile LED Yakma | Taylan'ın Blogu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Taylan'ın Blogu</h1>
+      <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="blog.html">Yazılar</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Arduino ile LED Yakma Deneyi</h2>
+      <p><em>13 Nisan 2025</em></p>
+
+      <p>Bu yazıda, Arduino kullanarak nasıl bir LED'i yakıp söndürebileceğimizi gösteriyorum. Bu basit proje, hem devre kurulumuna hem de temel kodlamaya giriş yapmak için harika bir başlangıç.</p>
+
+      <h3>Gerekli Malzemeler:</h3>
+      <ul>
+        <li>1 x Arduino UNO</li>
+        <li>1 x LED</li>
+        <li>1 x 220 ohm direnç</li>
+        <li>Jumper kablolar</li>
+        <li>Breadboard</li>
+      </ul>
+
+      <h3>Devre Şeması:</h3>
+      <p>LED'in anot ucu Arduino'nun 13 numaralı pinine, katot ucu ise direnç üzerinden GND'ye bağlanır.</p>
+
+      <h3>Arduino Kodu:</h3>
+      <pre>
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+      </pre>
+
+      <p>Bu kod sayesinde LED her 1 saniyede bir yanıp sönecek şekilde ayarlanmıştır. Bu örnekle hem donanım hem yazılım tarafına ilk adımı atmış oluyorsun.</p>
+
+      <p>İleride daha karmaşık projelere geçmeden önce bu temel projeleri iyice öğrenmek önemli. Yorumlarınız ve önerileriniz için iletişim sayfamdan bana ulaşabilirsiniz!</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Taylan Polater</p>
+    </div>
+  </footer>
+</body>
+</html>
